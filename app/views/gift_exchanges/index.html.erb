@@ -1,0 +1,22 @@
+<h1>Listing gift_exchanges</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+
+<% for gift_exchange in @gift_exchanges %>
+  <tr>
+    <td><%=h gift_exchange.title %></td>
+    <td><%=h gift_exchange.description %></td>
+    <td><%= link_to 'Show', gift_exchange %></td>
+    <td><%= link_to 'Edit', edit_gift_exchange_path(gift_exchange) %></td>
+    <td><%= link_to 'Destroy', gift_exchange, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New gift_exchange', new_gift_exchange_path %>

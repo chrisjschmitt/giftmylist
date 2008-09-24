@@ -1,0 +1,34 @@
+
+<div class="depot-form">
+
+  <%= error_messages_for 'user' %>
+
+  <fieldset>
+    <legend>Enter User Details</legend>
+
+    <% form_for :user do |form| %>
+      <p>
+        <label for="user_name">Name:</label>
+        <%= form.text_field :name, :size => 40 %>
+      </p>
+
+      <p>
+        <label for="user_password">Password:</label>
+        <%= form.password_field :password, :size => 40 %>
+      </p>
+
+      <p>
+        <label for="user_password_confirmation">Confirm:</label>
+        <%= form.password_field :password_confirmation, :size => 40 %>
+      </p>
+
+      <p>
+        <label for="gift_exchange">Gift Exchange</label>
+        <%= form.collection_select :gift_exchange_ids, GiftExchange.find(:all, :order => 'title'), :id, :title, {}, :multiple => false %>
+      </p>
+
+      <%= submit_tag "Add User", :class => "submit" %>
+    
+    <% end %>  
+  </fieldset>
+</div>

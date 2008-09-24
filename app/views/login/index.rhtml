@@ -1,0 +1,6 @@
+<h1>Welcome</h1>
+It's <%= Time.now %>. 
+You have <%= pluralize(@total_orders, "wish") %> on your list.<br><br>
+<% if @total_orders == 0 %>
+Click on <%= link_to "Manage My List", {:controller => 'gift_list', :action => 'show'} %> to get started creating your wish list.<br>
+<% end %>

@@ -1,0 +1,19 @@
+<% if routes.any? %>
+<br>
+<h1>Displayed Routes</h1>
+<table>
+  
+  <% for route in routes %>
+  <tr> 
+    <% if route.id == @current_route %>
+    <td id='current_route' ><%= image_tag("/images/icons/tick.png") %>
+      <% else %>
+      <td>
+     <% end %>
+            <%= link_to route.description, :controller => 'cities', :action => 'show_routes_on_map', :id => route %>
+    </td>
+      <td><%= button_to "Modify", :controller => 'routes', :action => 'show_map', :id => route %></td>
+    </tr>
+    <% end %>
+</table>
+<% end -%>

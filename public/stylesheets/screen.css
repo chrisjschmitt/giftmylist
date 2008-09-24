@@ -1,0 +1,585 @@
+/*
+ * The Pragmatic Studio
+ * http://pragmaticstudio.com
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Lucida Grande', sans-serif;     
+  font-size: small;
+  background: #f1f0ea;
+  color: #333;
+}
+
+img {
+  border: 0;
+  border-width: 0;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid #ccc;  
+  margin: 1em 0;
+}
+
+/* FIXES */
+
+body {
+	font-size: x-small; /* IE5 Win */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+  font-size: small;
+}
+
+html>body { /* be nice to Opera */
+  font-size: medium;
+}
+
+/* LINKS */
+
+a {
+  text-decoration: underline;
+}
+
+a:link, 
+a:visited {
+  color: #000055;
+}
+
+a:hover, 
+a:active {
+  text-decoration: none;
+  color: #fff !important;
+  background: #237cbe;
+}
+
+a:link.cancel, 
+a:visited.cancel {
+  color: red; 
+}
+
+a:link img,
+a:hover img {
+  border: 0;
+}
+
+
+/* LAYOUT */
+
+#wrapper {
+	background: #FFF;
+	width: 34em;
+	margin: 0 auto;
+}
+
+#user_panel {
+	text-align: right;
+}
+
+#header {
+  background: #006600;
+  padding: 0px 5px;
+  font-size: 40pt;
+  text-align: center;
+  border-bottom: 3px solid #195e92;
+}
+
+#navigation {
+  text-align: center;	
+}
+
+#header p.left {
+  float: left;
+  text-align: left;
+}
+
+#main-body {
+	margin: 10px auto;
+	padding: 0;
+	width: 34em;
+}
+
+#content {
+  width: 32em;
+  float: left;
+  background: white;
+  padding: 1em;
+}
+
+#list {
+  width: 27em;
+  float: left;
+  margin-left: 1px;
+  text-align: left;
+  background: white;
+  padding: 1em;	
+}
+
+#gift-list {
+  width: 24em;
+  float: left;
+  text-align: left;
+  background: white;
+  padding: 1em;	
+  margin: 5px .5em 0 .5em;
+  border: 1px solid #e7e8ac;
+}
+
+#adsense {
+  width: 29em;
+  float: left;
+  background: #ffffe9;
+  padding: 2em;
+  margin: 5px .5em 0 .5em;
+  border: 1px solid #e7e8ac;
+  text-align: center;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  clip: rect(5px, 0px, 0px, 0px);
+}
+
+#footer {
+	margin: 0 auto;
+	color: white;
+  background: #006600;
+	border-top: 3px solid #195e92;
+	padding: 1.5em;
+	font-size: 85%;
+	line-height: 1.25em;
+	text-align: center;
+}
+
+
+#footer p.left {
+  float: left;
+  text-align: left;
+}
+
+#footer p.right {
+  float: right;
+  text-align: right;
+}
+
+
+/* HEADERS */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 4px 0 4px 0;
+}
+
+h1#signup {
+  background: white url(/images/user.png) no-repeat 0px 50%;
+  padding-left: 25px;
+}
+
+h1#event {
+  background: white url(/images/date.png) no-repeat 0px 50%;
+  padding-left: 25px;
+}
+
+/* HEADER */
+
+#header h1 {
+  float: left;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+#header p {
+  float: right;
+  margin-right: 1em;
+  margin-top: 1.5em;
+  padding: 0;
+  text-align: center;
+  font-size: 155%;
+  line-height: 1.25em;
+  color: #244724;
+}
+
+/* NAVIGATION */
+
+#header ul {
+  float: right;
+  margin-top: 50px;
+  list-style: none;
+}
+
+#header li {
+  float: left;
+  margin-right: .5em;
+  padding: 0.5em 0;
+  background: url(/images/nav-bg.gif) top left repeat-x;
+}
+
+#header li img {
+  vertical-align: top;
+}
+
+#header li a {
+	float: left;
+  padding: 0 0.75em 0 0.75em;
+}
+
+#header li a:hover {
+  background: transparent;
+}
+	
+#header a, 
+#header a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header a:hover,
+#header a:active {
+  text-decoration: underline;
+}
+
+
+/* SIDEBAR */
+
+#sidebar h1 {
+  color: #393a27;
+  font-size: 130%;
+  margin-bottom: 0.4em;
+  border-bottom: 1px solid #e7e8ac;
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.5em;
+}
+
+#sidebar ul li {
+  margin: 2px 0;
+  padding: 0;
+}
+
+#sidebar hr {
+  margin: 0.5em 0em;
+  color: #e7e8ac;
+  background: #e7e8ac;
+}
+
+#sidebar img {
+  vertical-align: top;
+}
+
+#sidebar ul a, 
+#sidebar ul a:link, 
+#sidebar ul a:visited {
+  color: #666;
+  padding: 2px;
+  text-decoration: none;
+}
+
+#sidebar label {
+  float: none;
+  color: #393a27;
+  text-align: left;
+  padding-right: 0.2em;
+  font-size: 0.9em;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+#sidebar input[type=text], 
+#sidebar input[type=password], 
+#sidebar input.text {
+  width: 90%;
+  display: block;
+  font-size: 1.1em;
+}
+
+
+/* FORMS */
+
+fieldset {
+	float: left;
+	clear: left;
+	width: 100%;
+	margin: 1.5em 0 0 0;
+	padding: 0;
+	border: 1px solid #BFBAB0;
+	background-color: #F2EFE9;
+}
+
+legend {
+	margin-left: 1em;
+	color: #000000;
+	font-weight: bold;
+}
+
+fieldset ol {
+	padding: 1em 1em 0 1em;
+	list-style: none;
+}
+fieldset li {
+	padding-bottom: 1em;
+}
+
+/*Adjust the width to accommodate your field labels */
+label {
+	float: left;
+	width: 6em;
+	margin-right: 1em;
+	text-align: right;
+}
+
+fieldset.submit {
+	float: none;
+	width: auto;
+	border: 0 none #FFF;
+	padding-left: 8em;
+	padding-top: 1em;
+	background-color: transparent;
+}
+
+input[type=text], 
+input[type=password], 
+input.text, 
+input[type=file] {
+  width: 20em;
+  font-size: 1.1em;
+}
+
+input:focus,
+textarea:focus {
+  background: #ffc;
+}
+
+/* LISTS */
+
+#content ul {
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+#content ul li {
+  padding: 0em 0;
+}
+
+/* TABLES */
+
+table {
+  border-collapse: separate;
+  padding: 0;
+  line-height: 1em;
+}
+
+
+/* EVENTS */
+
+#events {
+  font-size: 90%;
+}
+
+#events ul {
+  margin-bottom: 2em;
+}
+
+.event {
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.event_image {
+  padding-left: 10px;
+  float: right;
+}
+
+.event table {
+  width: 100%;
+}
+
+.event table th {
+  width: 25%;
+  text-align: right;
+  vertical-align: top;
+}
+
+.event table td {
+  width: 75%;
+  padding-left: 1em;
+}
+
+
+/* PAGINATION */
+
+#paginator {
+  margin-top: 25px;
+}
+
+#paginator p {
+  text-align: right; 
+  float: right;
+}
+
+#paginator a {
+  padding: 5px 5px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+}
+
+
+/* FLASHES */
+
+#flash {
+  width: 80%;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  margin: 0 auto 10px auto;
+  padding: 8px;
+}
+
+.flash_notice {
+  color: #333;  
+  background: #efe;
+  border: solid 1px #bd7;  
+}
+
+.flash_notice .message {
+  padding: 0 0 0 25px;
+  background: url(/images/tick.png) no-repeat 0 50%;
+}
+
+.flash_error {
+  color: white;
+  background: #c00;
+  border: solid 1px #c00;
+}
+
+.flash_error .message {
+  padding: 0 0 0 25px;
+  background: url(/images/error.png) no-repeat 0 50%; 
+}
+
+.flash_destroy {
+  color: white;
+  background: #c00;
+  border: solid 1px #c00;
+}
+
+.flash_destroy .message {
+  padding: 0 0 0 25px;
+  background: url(/images/error.png) no-repeat 0 50%; 
+}
+
+/* ERRORS */
+
+.fieldWithErrors input[type=text],
+.fieldWithErrors input[type=password],
+.fieldWithErrors textarea,
+.fieldWithErrors input.text,
+.fieldWithErrors input[type=file] {
+  background: #ffdcdc;
+}
+
+#errors {
+  width: 80%;
+  background: #ffdcdc;
+  border: 1px solid #f3a0a0;
+  margin: 10px auto;
+  padding: 5px 20px;
+}
+
+#errors h3 {
+  color: #dc3d3d;
+  font-size: 120%;
+  margin-bottom: 0.3em;
+}
+
+#errors ul {
+  margin-top: 0.5em;
+  margin-left: 2em;
+}
+
+/* SCAFFOLD ERRORS */
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+
+/* SELF-CLEARING FLOATS */
+
+#header:after,
+#footer:after,
+#main-body:after,
+#paginator:after,
+#event:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* IE5+6/win only */
+* html #header, 
+* html #footer,
+* html #main-body,
+* html #paginator,
+* html #event {
+  height: 1%;
+}
+
+/* IE7/win only */
+*:first-child+html #header, 
+*:first-child+html #footer, 
+*:first-child+html #main-body, 
+*:first-child+html #paginator,
+*:first-child+html #event {
+  min-height: 1px;
+}

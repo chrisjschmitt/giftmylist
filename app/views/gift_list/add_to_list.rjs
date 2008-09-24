@@ -1,0 +1,3 @@
+# TODO Operate on the page object
+page.insert_html :bottom, "gift-list", '<li id="new-item">Another gift idea</li>'
+page.visual_effect :highlight, 'new-item'

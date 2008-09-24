@@ -1,0 +1,2 @@
+module GiftListHelper
+end

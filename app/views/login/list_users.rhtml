@@ -1,0 +1,10 @@
+<table>
+<% for user in @all_users %>
+  <% unless user.id == session[:user_id] %>
+    <tr>
+    <td><%=h user.name %></td>
+    <td><%= link_to 'View List', :controller => 'view_gift_list', :action => 'show', :id => user %></td>
+    </tr>
+  <% end %>
+<% end %>
+</table>

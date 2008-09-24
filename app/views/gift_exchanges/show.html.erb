@@ -1,0 +1,13 @@
+<p>
+  <b>Title:</b>
+  <%=h @gift_exchange.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @gift_exchange.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_gift_exchange_path(@gift_exchange) %> |
+<%= link_to 'Back', gift_exchanges_path %>
